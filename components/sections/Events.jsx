@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import Card from "../ui/Card";
 import News from "../ui/News";
 import solve from "/public/images/solve.png";
+import Wrapper from "../layout/Wrapper";
 
 const Events = () => {
   const infos = [
@@ -30,18 +31,21 @@ const Events = () => {
   ];
   return (
     <div className="pt-[56px] ">
-      <div className="px-[80px] space-y-[20px] bg-light pt-[16px] pb-[80px] sm:px-5">
-        <div className="flex items-center justify-between">
-          <News
-            title="Join our many events "
-            description="Find more current news and interesting events on the"
-            sub=" News and events page."
-          />
-          <Button styleButton="sm:hidden" text="see all events" />
-        </div>
+      <Wrapper>
+        {" "}
+        <div className="px-[80px] space-y-[20px] bg-light pt-[16px] pb-[80px] sm:px-5">
+          <div className="flex items-center justify-between">
+            <News
+              title="Join our many events "
+              description="Find more current news and interesting events on the"
+              sub=" News and events page."
+            />
+            <Button styleButton="sm:hidden" text="see all events" />
+          </div>
 
-        <Card datas={infos} style="bg-white" cardStyle="grid-cols-3" />
-      </div>
+          <Card datas={infos} style="bg-white" cardStyle="grid-cols-3" />
+        </div>
+      </Wrapper>
     </div>
   );
 };
