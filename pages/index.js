@@ -13,11 +13,14 @@ import Studies from '../components/sections/Studies'
 import Information from '../components/sections/Informatio'
 import Read from '../components/sections/Read'
 import Follow from '../components/sections/Follow'
-import Footer from '../components/layout/Footer'
+import Footer from '../components/layout/Footer';
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ['latin'] });
 const index = () => {
 
   return (
-    <div>
+    <div className={`${inter.className}`}>
       <NavBar />
       <Hero />
       <SpotLight />

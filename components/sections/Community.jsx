@@ -1,6 +1,7 @@
 import React from "react";
 import QuickLink from "../ui/QuickLink";
 import old from "/public/images/old.jpeg";
+import Wrapper from "../layout/Wrapper";
 const Community = () => {
   const data = [
     {
@@ -18,7 +19,9 @@ const Community = () => {
   ];
   return (
     <div className="pt-[72px]">
-      <QuickLink title="Community voices" content={data} />
+      <Wrapper>
+        <QuickLink title="Community voices" content={data} />
+      </Wrapper>
     </div>
   );
 };
