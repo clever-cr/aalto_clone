@@ -11,6 +11,9 @@ import Schools from '../components/sections/Schools'
 import SpotLight from '../components/sections/spotLight'
 import Studies from '../components/sections/Studies'
 import Information from '../components/sections/Informatio'
+import Read from '../components/sections/Read'
+import Follow from '../components/sections/Follow'
+import Footer from '../components/layout/Footer'
 const index = () => {
 
   return (
@@ -26,6 +29,9 @@ const index = () => {
       <Community />
       <Studies />
       <Information />
+      <Read />
+      <Follow />
+      <Footer />
 
     </div>
   )

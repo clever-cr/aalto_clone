@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = ({ datas, style }) => {
+const Card = ({ datas, style, cardStyle }) => {
   return (
     <div>
-      <div className="grid grid-cols-3 gap-x-[32px] sm:grid-cols-1  sm:gap-y-5">
+      <div
+        className={`grid  gap-x-[32px] sm:grid-cols-1  sm:gap-y-5 ${cardStyle}`}
+      >
         {datas.map((data, index) => {
           return (
             <div key={index} className={`border- sm:w-fit ${style}`}>

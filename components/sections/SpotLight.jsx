@@ -33,10 +33,11 @@ const SpotLight = () => {
       events on the"
           sub=" News and events page."
         />
-        <Button text="See all Aalto University news" />
+        <Button text="See all Aalto University news " styleButton="sm:hidden" />
       </div>
 
-      <Card datas={info} style="border" />
+      <Card datas={info} style="border" cardStyle="grid-cols-3" />
+      <Button text="See all Aalto University news " styleButton="lg:hidden" />
     </div>
   );
 };

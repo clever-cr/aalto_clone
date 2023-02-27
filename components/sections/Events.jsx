@@ -29,18 +29,18 @@ const Events = () => {
     },
   ];
   return (
-    <div className="pt-[56px]">
-      <div className="px-[80px] space-y-[20px] bg-light pt-[16px] sm:px-5">
+    <div className="pt-[56px] ">
+      <div className="px-[80px] space-y-[20px] bg-light pt-[16px] pb-[80px] sm:px-5">
         <div className="flex items-center justify-between">
           <News
             title="Join our many events "
             description="Find more current news and interesting events on the"
             sub=" News and events page."
           />
-          <Button style="sm:hidden" text="see all events" />
+          <Button styleButton="sm:hidden" text="see all events" />
         </div>
 
-        <Card datas={infos} />
+        <Card datas={infos} style="bg-white" cardStyle="grid-cols-3" />
       </div>
     </div>
   );

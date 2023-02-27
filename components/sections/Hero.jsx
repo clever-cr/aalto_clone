@@ -8,7 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div>
+    <div className="sm:flex sm:flex-col-reverse">
       <div className="">
         <Image
           width={1519}
@@ -18,7 +18,7 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <div className="bg-black text-white  relative -mt-[302px] ml-[40px] sm:mt-0 sm:ml-0 px-[40px] py-[24px] w-[680px] h-[344px] space-y-[16px] sm:w-[483px] sm:h-[344px]">
+      <div className="bg-black text-white  relative -mt-[302px] ml-[40px] sm:mt-0 sm:ml-0 px-[40px] py-[24px] w-[680px] h-[344px] space-y-[16px] sm:w-auto sm:h-auto">
         <h2 className="text-[36px] leading-[42px]">
           Aalto student – New Student Guide is here to replace Into
         </h2>

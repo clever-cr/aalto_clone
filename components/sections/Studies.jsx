@@ -28,7 +28,7 @@ const Studies = () => {
       <h2 className="text-[28px] leading-[33px] text-gray">
         Studies and courses open to all
       </h2>
-      <Card datas={info} style="bg-white" />
+      <Card datas={info} style="bg-white" cardStyle="grid-cols-3" />
     </div>
   );
 };

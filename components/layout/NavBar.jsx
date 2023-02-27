@@ -59,7 +59,10 @@ const NavBar = () => {
                   className={`flex items-center gap-x-[8px] hover:bg-[#E3E3E3]`}
                 >
                   <>{el.icon} </>
-                  <Link href="#" className={`${index == 6 ? "" : "sm:hidden"}`}>
+                  <Link
+                    href="#"
+                    className={`${index == 4 ? "sm:block" : "sm:hidden"}`}
+                  >
                     {" "}
                     {el.link}{" "}
                   </Link>
