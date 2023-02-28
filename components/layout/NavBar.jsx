@@ -77,7 +77,7 @@ const NavBar = () => {
             <Image
               width={97}
               height={68}
-              className={`sm:hiddfd ten  ${
+              className={`sm:hidden  ${
                 isScrolled
                   ? "w-[40px] h-[28px] object-cover"
                   : "h-[68px] w-[97px] "
