@@ -20,7 +20,7 @@ const inter = Inter({ subsets: ['latin'] });
 const index = () => {
 
   return (
-    <div className={`${inter.className}`}>
+    <div className={`bg-white ${inter.className}`}>
       <NavBar />
       <Hero />
       <SpotLight />
