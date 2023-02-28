@@ -18,7 +18,6 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ['latin'] });
 const index = () => {
-
   return (
     <div className={`bg-white ${inter.className}`}>
       <NavBar />
@@ -35,7 +34,6 @@ const index = () => {
       <Read />
       <Follow />
       <Footer />
-
     </div>
   )
 }

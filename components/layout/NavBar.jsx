@@ -12,9 +12,15 @@ import {
 import { GrLanguage } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
 import Wrapper from "./Wrapper";
+
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const searchOpen = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
     return () => (document.body.style.overflow = "scroll");
@@ -63,7 +69,7 @@ const NavBar = () => {
     <div>
       <div
         className={`px-[80px] duration-500 border-b border-black bg-white sm:px-5 sm:py-[16px] fixed z-10 w-full ${
-          isScrolled ? "py-[4px] " : " pt-[23px]"
+          isScrolled ? "py-[4px]" : "pt-[23px]"
         }`}
       >
         <Wrapper>
@@ -71,8 +77,10 @@ const NavBar = () => {
             <Image
               width={97}
               height={68}
-              className={`sm:hidden ${
-                isScrolled ? "w-[40px] h-[28px] " : "h-[68px] w-[97px] "
+              className={`sm:hiddfd ten  ${
+                isScrolled
+                  ? "w-[40px] h-[28px] object-cover"
+                  : "h-[68px] w-[97px] "
               }`}
               src="/images/logo.png"
               alt=""
@@ -80,17 +88,20 @@ const NavBar = () => {
             <Image
               width={37}
               height={26}
-              className="h-[26px] w-[37px] hidden sm:block"
+              className="h-[26px] w-[37px] hidden sm:block object-cover"
               src="/images/smallLogo.png"
               alt=""
             />
             <div className="gap-x-[44px] flex items-center">
-              <div className="flex gap-x-[44px]">
+              <div className="flex gap-x-[44px] sm:gap-x-[16px]">
                 {data.map((el, index) => {
                   return (
                     <div
                       key={index}
-                      onClick={index == 4 && whenMenuOpen}
+                      onClick={
+                        (index == 4 && whenMenuOpen) ||
+                        (index == 3 && searchOpen)
+                      }
                       className={`flex items-center gap-x-[8px] hover:bg-[#E3E3E3]`}
                     >
                       {isMenuOpen && index == 4 ? (
@@ -103,7 +114,11 @@ const NavBar = () => {
                       ) : (
                         <Link
                           href="#"
-                          className={`${index == 4 ? "sm:block" : "sm:hidden"}`}
+                          className={`${
+                            index == 4
+                              ? "sm:block sm:border-l sm:pl-[16px]"
+                              : "sm:hidden"
+                          }`}
                         >
                           {el.link}
                         </Link>
@@ -152,6 +167,7 @@ const NavBar = () => {
           </div>
         </div>
       )}
+      {isSearchOpen && <div className="bg-red-200 h-screen">hyyy</div>}
     </div>
   );
 };
