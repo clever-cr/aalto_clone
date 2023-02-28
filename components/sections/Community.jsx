@@ -1,6 +1,8 @@
 import React from "react";
 import QuickLink from "../ui/QuickLink";
 import old from "/public/images/old.jpeg";
+import girls from "/public/images/girls.jpeg";
+import boys from "/public/images/boys.jpeg";
 import Wrapper from "../layout/Wrapper";
 const Community = () => {
   const data = [
@@ -9,11 +11,11 @@ const Community = () => {
       text: "Watch our videos",
     },
     {
-      image: old,
+      image: girls,
       text: "Watch our videos",
     },
     {
-      image: old,
+      image: boys,
       text: "Watch our videos",
     },
   ];

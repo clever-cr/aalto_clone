@@ -1,6 +1,13 @@
 import React from "react";
 import uni from "/public/images/uni.jpeg";
+import roads from "/public/images/roads.jpeg";
+import stairs from "/public/images/stairs.jpeg";
+import yellow from "/public/images/yellow.jpeg";
+import develop from "/public/images/develop.jpeg";
+import student from "/public/images/student.jpeg";
+import model from "/public/images/model.jpeg";
 import Image from "next/image";
+import forum from "/public/images/forum.jpeg";
 import Wrapper from "../layout/Wrapper";
 const AltoCampuses = () => {
   const campuses = [
@@ -9,31 +16,31 @@ const AltoCampuses = () => {
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: roads,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: stairs,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: yellow,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: develop,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: model,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: student,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
     {
-      image: uni,
+      image: forum,
       text: "Building Finland's first quantum computer. Photo: Aalto University / Mikko Raskinen.",
     },
   ];

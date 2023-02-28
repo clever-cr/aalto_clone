@@ -18,7 +18,7 @@ const CampusCard = ({ image, title, descr, links = 0, style }) => {
             return (
               <div
                 key={index}
-                className="flex items-center hover:bg-light gap-x-[5px]"
+                className="flex items-center hover:bg-light hover:w-fit gap-x-[5px]"
               >
                 <BsArrowRight />
                 <Link

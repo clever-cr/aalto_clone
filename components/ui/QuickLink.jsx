@@ -16,7 +16,7 @@ const QuickLink = ({ title, content = [], hasIcon }) => {
               >
                 {hasIcon ? (
                   <div className="bg-yellow px-[22px] py-[22px] rounded-full sm:px-[18px] sm:py-[18px] ">
-                    <>{el.icon()}</>
+                    <>{el.icon}</>
                   </div>
                 ) : (
                   <Image

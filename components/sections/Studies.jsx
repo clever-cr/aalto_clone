@@ -1,5 +1,7 @@
 import React from "react";
 import students from "/public/images/students.jpeg";
+import red from "/public/images/red.jpeg";
+import junior from "/public/images/junior.png";
 import Card from "../ui/Card";
 const Studies = () => {
   const info = [
@@ -10,16 +12,16 @@ const Studies = () => {
         "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
     },
     {
-      image: students,
-      link: "Lifewide Learning",
+      image: red,
+      link: "Aalto University Open University",
       descr:
-        "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
+        "Open University courses are open to everyone regardless of background or age. Open University offers individual courses in Business, Technology, Languages, and Art and Design. Students are ad",
     },
     {
-      image: students,
-      link: "Lifewide Learning",
+      image: junior,
+      link: "Aalto University Junior",
       descr:
-        "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
+        "Aalto University Junior is art, science, technology and entrepreneurship for children, young people and teachers - to support teaching, personal joy and a source of enthusiasm.ss",
     },
   ];
 

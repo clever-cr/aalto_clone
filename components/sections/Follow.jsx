@@ -13,7 +13,7 @@ const Follow = () => {
               (link, index) => {
                 return (
                   <Link
-                    className="text-[36px] leading-[42px] text-gray underline hover:bg-light w-fit-"
+                    className="text-[36px] leading-[42px] text-gray underline hover:bg-light hover:bg-fit"
                     key={index}
                     href="#"
                   >

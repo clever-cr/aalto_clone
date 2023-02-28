@@ -1,5 +1,6 @@
 import React from "react";
 import unto from "/public/images/unto.jpeg";
+
 import Link from "next/link";
 import Image from "next/image";
 import InformationCard from "../ui/InformationCard";
@@ -38,9 +39,9 @@ const Schools = () => {
     },
   ];
   return (
-    <div className="px-[80px] space-y-[16px] sm:px-5">
+    <div className="px-[80px] sm:px-5">
       <Wrapper>
-        <div>
+        <div className="space-y-[16px] ">
           <h2 className="text-[28px] leading-[33px] text-gray">
             Explore our six schools
           </h2>

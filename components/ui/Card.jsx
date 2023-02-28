@@ -10,11 +10,11 @@ const Card = ({ datas, style, cardStyle }) => {
       >
         {datas.map((data, index) => {
           return (
-            <div key={index} className={`border- sm:w-fit ${style}`}>
+            <div key={index} className={`border- sm:w-fit group ${style}`}>
               <Image src={data.image} alt="" />
               <div className="space-y-[24px] px-[32px] py-[16px]">
                 <div className="space-y-[20px] ">
-                  <p className="text-[21px] leading-[25px] text-gray  ">
+                  <p className="text-[21px] leading-[25px] text-gray group-hover:bg-light group-hover:w-fit ">
                     {data.link}
                   </p>
                   <p className="text-base leading-[25px] text-gray">

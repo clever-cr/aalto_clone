@@ -31,7 +31,10 @@ const Hero = () => {
           <div className="space-y-[8px]">
             {["Student Guide", "Read the news"].map((el, index) => {
               return (
-                <div key={index} className="flex items-center gap-x-[5px]">
+                <div
+                  key={index}
+                  className="flex items-center gap-x-[5px] hover:bg-light hover:w-fit hover:text-black"
+                >
                   <BsArrowRight />
                   <Link className="text-lg leading-[22px]" href="#">
                     {el}
@@ -44,7 +47,7 @@ const Hero = () => {
           <div className="flex items-center justify-between">
             <AiOutlineLeft className="border w-[32px] h-[32px] rounded-full p-[2px]" />
 
-            <div className="flex  items-center sm:hidden">
+            <div className="flex  items-center ">
               <GoPrimitiveDot className="w-10 h-10" />
               <RxDotFilled className="w-[30px] h-[30px]" />
               <RxDotFilled className="w-[30px] h-[30px]" />

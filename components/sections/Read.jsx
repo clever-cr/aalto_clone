@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../ui/Card";
 import sensual from "/public/images/sensual.jpeg";
+import scientist from "/public/images/scientists.jpeg";
 const Read = () => {
   const data = [
     {
@@ -10,10 +11,10 @@ const Read = () => {
         "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
     },
     {
-      image: sensual,
-      link: "Lifewide Learning",
+      image: scientist,
+      link: "Give for the future",
       descr:
-        "Select a solution that suits you, ranging from individual courses to programmes that are open for all.",
+        "Join us in building a sustainable future! Together we can solve some of the toughest problems of our time.",
     },
   ];
   return (

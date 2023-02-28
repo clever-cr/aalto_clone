@@ -4,6 +4,8 @@ import Card from "../ui/Card";
 import pxl from "/public/images/PXL_20220622_103655210_0.jpeg";
 import Button from "../ui/Button";
 import Wrapper from "../layout/Wrapper";
+import pipot from "/public/images/pipot4_1.jpeg";
+import slush from "/public/images/slush.jpeg";
 const SpotLight = () => {
   const info = [
     {
@@ -13,23 +15,23 @@ const SpotLight = () => {
       date: " 21.2.2023 | News",
     },
     {
-      image: pxl,
-      link: "Shrinking from the heat",
-      descr: "Reactive fabrics respond to changes in temperature",
+      image: pipot,
+      link: "Knit an Aalto hat for yourself or a friend!",
+      descr:
+        "Follow Marja Niemi and Outi Elina Kansanen’s knitting pattern to make a lovely gift for someone special",
       date: " 21.2.2023 | News",
     },
     {
-      image: pxl,
-      link: "Shrinking from the heat",
-      descr: "Reactive fabrics respond to changes in temperature",
+      image: slush,
+      link: "Aalto Startup Center makes global top three in 2021-2022 university business accelerator ranking",
+      descr: "UBI Global World Benchmark Study ranks top",
       date: " 21.2.2023 | News",
     },
   ];
   return (
-    <div className="px-[80px] space-y-[20px] sm:px-5 sm:pt-5">
+    <div className="px-[80px] sm:px-5 sm:pt-5">
       <Wrapper>
-        {" "}
-        <div>
+        <div className=" space-y-[20px]">
           <div className="flex items-center justify-between ">
             <News
               title="Spotlight "
@@ -44,6 +46,10 @@ const SpotLight = () => {
           </div>
 
           <Card datas={info} style="border" cardStyle="grid-cols-3" />
+          <Button
+            text="See all Aalto University news "
+            styleButton=" hidden sm:block w-fit"
+          />
         </div>
       </Wrapper>
     </div>
